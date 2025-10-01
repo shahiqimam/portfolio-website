@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahiq Imam - AI Expert & Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-spinner"></div>
+    <p>Loading...</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">SI</span>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-controls">
+        <button id="dark-toggle" class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-toggle" id="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="greeting">Hello, I'm</div>
+        <h1 class="hero-title">
+          <span class="name-highlight">Shahiq Imam</span>
+        </h1>
+        <div class="hero-subtitle">
+          <span class="typing-text" id="typing-text"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          AI Expert & Full-Stack Developer specializing in machine learning, neural networks, and intelligent systems. 
+          Building the future of technology through innovative AI solutions and cutting-edge development.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Get In Touch</span>
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image">
+          <div class="profile-image-container">
+            <img src="profile-image.jpg.jpeg" alt="Shahiq Imam - AI Expert" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder" style="display: none;">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="image-overlay"></div>
+          </div>
+          <div class="floating-elements">
+            <div class="floating-element" style="--delay: 0s;">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="floating-element" style="--delay: 1s;">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="floating-element" style="--delay: 2s;">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="floating-element" style="--delay: 3s;">
+              <i class="fas fa-microchip"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+  
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">AI Expert & Innovative Technology Leader</h2>
+        <p class="section-description">
+          With 6+ years of experience in AI development and machine learning, I specialize in creating 
+          intelligent systems, neural networks, and cutting-edge AI solutions that transform industries.
+        </p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <div class="about-story">
+            <h3>My Journey</h3>
+            <p>
+              My journey began with a fascination for artificial intelligence and machine learning. 
+              Starting with simple neural networks, I've evolved into developing sophisticated AI systems 
+              that solve complex real-world problems across various industries.
+            </p>
+            <p>
+              Today, I specialize in deep learning, computer vision, natural language processing, 
+              and building intelligent applications. I'm passionate about pushing the boundaries 
+              of what's possible with AI and creating solutions that make a meaningful impact.
+            </p>
+          </div>
+          
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number" data-target="75">0</div>
+              <div class="stat-label">AI Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="35">0</div>
+              <div class="stat-label">Machine Learning Models</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="6">0</div>
+              <div class="stat-label">Years AI Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="15">0</div>
+              <div class="stat-label">AI Technologies</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-visual">
+          <div class="skills-container">
+            <h3>AI & Technology Expertise</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">Machine Learning</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="95%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-python"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">Python & AI Libraries</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="98%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-eye"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">Computer Vision</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="92%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">NLP & Deep Learning</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">TensorFlow & PyTorch</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="94%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">Cloud AI Services</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="88%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-description">
+          A showcase of my recent work, demonstrating expertise in modern web technologies 
+          and creative problem-solving.
+        </p>
+      </div>
+      
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI/ML</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="research">Research</button>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card" data-category="ai">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=400&h=200&q=80" alt="Neural Network Chatbot" class="project-image">
+            <div class="project-placeholder" style="display: none;">
+              <i class="fas fa-brain"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Python</span>
+              <span class="tag">Deep Learning</span>
+            </div>
+            <h3 class="project-title">Neural Network Chatbot</h3>
+            <p class="project-description">
+              Advanced conversational AI system with 95% accuracy, built using transformer architecture 
+              and fine-tuned on domain-specific datasets for natural language understanding.
+            </p>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="ai">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=400&h=200&q=80" alt="Real-Time Object Detection" class="project-image">
+            <div class="project-placeholder" style="display: none;">
+              <i class="fas fa-eye"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">OpenCV</span>
+              <span class="tag">YOLO</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+            <h3 class="project-title">Real-Time Object Detection</h3>
+            <p class="project-description">
+              High-performance object detection system using YOLO v8, capable of identifying 
+              and tracking multiple objects in real-time with 90%+ accuracy across various scenarios.
+            </p>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&h=200&q=80" alt="AI Analytics Dashboard" class="project-image">
+            <div class="project-placeholder" style="display: none;">
+              <i class="fas fa-chart-line"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">ML Pipeline</span>
+            </div>
+            <h3 class="project-title">AI Analytics Dashboard</h3>
+            <p class="project-description">
+              Interactive dashboard for visualizing machine learning model performance, 
+              data insights, and predictive analytics with real-time model monitoring.
+            </p>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="ai">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=400&h=200&q=80" alt="Autonomous Trading Bot" class="project-image">
+            <div class="project-placeholder" style="display: none;">
+              <i class="fas fa-robot"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Reinforcement Learning</span>
+              <span class="tag">Gym</span>
+            </div>
+            <h3 class="project-title">Autonomous Trading Bot</h3>
+            <p class="project-description">
+              AI-powered trading system using reinforcement learning algorithms, 
+              achieving 25% annual returns through intelligent market analysis and risk management.
+            </p>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="mobile">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=400&h=200&q=80" alt="Smart Photo Classifier" class="project-image">
+            <div class="project-placeholder" style="display: none;">
+              <i class="fas fa-camera"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">TensorFlow Lite</span>
+              <span class="tag">Mobile AI</span>
+            </div>
+            <h3 class="project-title">Smart Photo Classifier</h3>
+            <p class="project-description">
+              Mobile app with on-device AI for instant photo classification and tagging, 
+              using TensorFlow Lite for offline processing and 98% accuracy in image recognition.
+            </p>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="research">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=400&h=200&q=80" alt="Generative AI Research" class="project-image">
+            <div class="project-placeholder" style="display: none;">
+              <i class="fas fa-microscope"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Research</span>
+              <span class="tag">GAN</span>
+              <span class="tag">Publications</span>
+            </div>
+            <h3 class="project-title">Generative AI Research</h3>
+            <p class="project-description">
+              Published research on advanced GAN architectures for synthetic data generation, 
+              contributing to 3 peer-reviewed papers and improving data augmentation techniques.
+            </p>
+          </div>
+    </div>
+  
+        <div class="project-card" data-category="ai">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=400&h=200&q=80" alt="Multilingual NLP System" class="project-image">
+            <div class="project-placeholder" style="display: none;">
+              <i class="fas fa-language"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">NLP</span>
+              <span class="tag">BERT</span>
+              <span class="tag">Sentiment Analysis</span>
+            </div>
+            <h3 class="project-title">Multilingual NLP System</h3>
+            <p class="project-description">
+              Advanced natural language processing system supporting 15+ languages, 
+              with sentiment analysis, text classification, and language translation capabilities.
+            </p>
+          </div>
+    </div>
+  
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=400&h=200&q=80" alt="AI Security Platform" class="project-image">
+            <div class="project-placeholder" style="display: none;">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Anomaly Detection</span>
+              <span class="tag">MLOps</span>
+              <span class="tag">Security</span>
+            </div>
+            <h3 class="project-title">AI Security Platform</h3>
+            <p class="project-description">
+              Enterprise-grade security platform using machine learning for threat detection, 
+              with real-time monitoring and automated response systems for cybersecurity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Build Something Amazing Together</h2>
+        <p class="section-description">
+          Ready to bring your ideas to life? I'm always excited to work on new projects 
+          and collaborate with passionate people.
+        </p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>shahiqimam@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>+971-525-552-771</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Abu Dhabi, UAE</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-dribbble"></i>
+            </a>
+          </div>
+        </div>
+        
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Your Name</label>
+            <span class="form-line"></span>
+          </div>
+          
+          <div class="form-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Your Email</label>
+            <span class="form-line"></span>
+          </div>
+          
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required>
+            <label for="subject">Subject</label>
+            <span class="form-line"></span>
+          </div>
+          
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+            <span class="form-line"></span>
+          </div>
+          
+          <button type="submit" class="btn btn-primary submit-btn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+    </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2025 Shahiq Imam. All rights reserved.</p>
+          <p>Built with AI expertise and cutting-edge technologies.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
